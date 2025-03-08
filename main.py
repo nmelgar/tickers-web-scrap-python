@@ -51,7 +51,7 @@ def scrap_data(num_pages):
             row_data = {}
             for i, col in enumerate(cols):
                 if i == 0:
-                    row_data[f"ticker"] = col.text
+                    row_data[f"symbol"] = col.text
                 elif i == 1:
                     row_data["company_name"] = col.text
                 elif i == 2:
