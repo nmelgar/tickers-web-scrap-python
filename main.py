@@ -71,15 +71,16 @@ def scrap_data(num_pages):
         counter += 1
 
     # write the data to the json file
-    with open("stock_symbols_data.json", "w") as json_file:
+    with open("stock_tickers_data.json", "w") as json_file:
         json.dump(table_data, json_file, indent=4)
+
 
 # define the number of loops the program will perform
 number_pages_xpath = '//*[@id="main"]/div/div/nav/div/span'
 number_pages = driver.find_element(By.XPATH, number_pages_xpath)
 pages_text = number_pages.text
 number_pages_total = int(pages_text[-2:])
-total_clicks_next = (number_pages_total - 1)
+total_clicks_next = number_pages_total - 1
 
 # call the scrap_Data function
 scrap_data(total_clicks_next)
