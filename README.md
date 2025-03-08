@@ -4,6 +4,10 @@ Stock Ticker Scraping System, designed to scrape stock ticker information from a
 
 The purpose of this software is to provide a practical application of web scraping and Python programming, demonstrating how to interact with a web page and extract data using Selenium.
 
+# Data
+
+You can find the raw data for the stock tickers on the [project's GitHub](https://raw.githubusercontent.com/nmelgar/tickers-web-scrap-python/refs/heads/main/stock_tickers_data.json)
+
 # Web Scraping
 
 The web scraping is performed on the following website:
